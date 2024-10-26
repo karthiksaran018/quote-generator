@@ -141,11 +141,11 @@ body {
 
 /* Media Queries */
 
-/* Extra Small Devices (Portrait) */
+/* Small Mobile Portrait */
 @media (max-width: 480px) {
   .quote-box {
-    padding: 15px;
-    max-width: 95%;
+    padding: 20px;
+    max-width: 90%;
   }
 
   .quote-text {
@@ -162,7 +162,23 @@ body {
   }
 }
 
-/* Tablets (Portrait and Landscape) */
+/* Small Mobile Landscape */
+@media (max-width: 480px) and (orientation: landscape) {
+  .quote-box {
+    padding: 20px;
+    max-width: 80%;
+  }
+
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   .quote-box {
     padding: 25px;
@@ -185,8 +201,8 @@ body {
 /* Laptops and Medium Screens */
 @media (min-width: 769px) and (max-width: 1024px) {
   .quote-box {
-    padding: 30px;
-    max-width: 75%;
+    padding: 35px;
+    max-width: 80%;
   }
 
   .quote-text {
@@ -202,7 +218,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .quote-box {
     padding: 40px;
-    max-width: 60%;
+    max-width: 700px;
   }
 
   .quote-text {
@@ -218,7 +234,7 @@ body {
 @media (min-width: 1441px) {
   .quote-box {
     padding: 50px;
-    max-width: 50%;
+    max-width: 800px;
   }
 
   .quote-text {
@@ -228,4 +244,29 @@ body {
   .quote-author {
     font-size: 1.6rem;
   }
+}
+/* Category Dropdown Container */
+.category-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-container label {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.category-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
 }
