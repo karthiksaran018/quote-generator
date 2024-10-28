@@ -1,0 +1,30 @@
+{
+    "quotes": [
+      {
+        "content": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs",
+        "category": "motivation"
+      },
+      {
+        "content": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson",
+        "category": "motivation"
+      },
+      {
+        "content": "Love is not about possession. Love is about appreciation.",
+        "author": "Osho",
+        "category": "love"
+      },
+      {
+        "content": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon",
+        "category": "life"
+      },
+      {
+        "content": "Tears come from the heart and not from the brain.",
+        "author": "Leonardo da Vinci",
+        "category": "sad"
+      }
+    ]
+  }
+  

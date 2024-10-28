@@ -1,30 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import './QuoteGenerator.css';
 
-// Predefined quotes for each category
-const quotesData = {
-  motivation: [
-    { content: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
-    { content: "Don't watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
-  ],
-  love: [
-    { content: "Love is not about possession. Love is about appreciation.", author: "Osho" },
-    { content: "To love and be loved is to feel the sun from both sides.", author: "David Viscott" },
-  ],
-  life: [
-    { content: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
-    { content: "Get busy living or get busy dying.", author: "Stephen King" },
-  ],
-  sad: [
-    { content: "Tears come from the heart and not from the brain.", author: "Leonardo da Vinci" },
-    { content: "It's sad when someone you know becomes someone you knew.", author: "Henry Rollins" },
-  ],
+// Fetch quotes from JSON file
+const fetchQuotesFromFile = async () => {
+  try {
+    const response = await fetch('/quotes.json');
+    const data = await response.json();
+    return data.quotes;
+  } catch (error) {
+    console.error('Error fetching quotes:', error);
+    return [];
+  }
 };
 
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('motivation');
+  const [allQuotes, setAllQuotes] = useState([]);
 
   // Motivational prompts for user interaction
   const prompts = [
@@ -39,16 +32,30 @@ const QuoteGenerator = () => {
 
   // Fetch a random quote from the selected category
   const fetchQuote = () => {
-    const categoryQuotes = quotesData[category];
-    const randomQuote = categoryQuotes[Math.floor(Math.random() * categoryQuotes.length)];
-    setQuote(randomQuote.content);
-    setAuthor(randomQuote.author);
+    const filteredQuotes = allQuotes.filter(q => q.category === category);
+    const randomQuote = filteredQuotes[Math.floor(Math.random() * filteredQuotes.length)];
+    if (randomQuote) {
+      setQuote(randomQuote.content);
+      setAuthor(randomQuote.author);
+      console.log('Selected Quote:', randomQuote); // Add this line for debugging
+    }
   };
+  
+
+  // Load quotes from JSON file
+  useEffect(() => {
+    const loadQuotes = async () => {
+      const quotes = await fetchQuotesFromFile();
+      setAllQuotes(quotes);
+      fetchQuote(); // Fetch the first quote when loaded
+    };
+    loadQuotes();
+  }, []);
 
   // Fetch a new quote when the category changes
   useEffect(() => {
     fetchQuote();
-  }, [category]);
+  }, [category, allQuotes]);
 
   // Function to handle quote sharing on Twitter
   const shareOnTwitter = () => {
