@@ -1,0 +1,390 @@
+{
+    "quotes": [
+      {
+        "content": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs",
+        "category": "motivation"
+      },
+      {
+        "content": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson",
+        "category": "motivation"
+      },
+      {
+        "content": "Love is not about possession. Love is about appreciation.",
+        "author": "Osho",
+        "category": "love"
+      },
+      {
+        "content": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon",
+        "category": "life"
+      },
+      {
+        "content": "Tears come from the heart and not from the brain.",
+        "author": "Leonardo da Vinci",
+        "category": "sad"
+      },
+      {
+        "content": "It takes courage to grow up and become who you really are.",
+        "author": "E.E. Cummings",
+        "category": "motivation"
+      },
+      {
+        "content": "Your self-worth is determined by you. You don't have to depend on someone telling you who you are.",
+        "author": "Beyoncé",
+        "category": "motivation"
+      },
+      {
+        "content": "Nothing is impossible. The word itself says 'I'm possible!'",
+        "author": "Audrey Hepburn",
+        "category": "motivation"
+      },
+      {
+        "content": "Keep your face always toward the sunshine, and shadows will fall behind you.",
+        "author": "Walt Whitman",
+        "category": "motivation"
+      },
+      {
+        "content": "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And you are the guy who'll decide where to go.",
+        "author": "Dr. Seuss",
+        "category": "motivation"
+      },
+      {
+        "content": "Attitude is a little thing that makes a big difference.",
+        "author": "Winston Churchill",
+        "category": "motivation"
+      },
+      {
+        "content": "To bring about change, you must not be afraid to take the first step. We will fail when we fail to try.",
+        "author": "Rosa Parks",
+        "category": "motivation"
+      },
+      {
+        "content": "All our dreams can come true, if we have the courage to pursue them.",
+        "author": "Walt Disney",
+        "category": "motivation"
+      },
+      {
+        "content": "Don't sit down and wait for the opportunities to come. Get up and make them.",
+        "author": "Madam C.J. Walker",
+        "category": "motivation"
+      },
+      {
+        "content": "Champions keep playing until they get it right.",
+        "author": "Billie Jean King",
+        "category": "motivation"
+      },
+      {
+        "content": "I am lucky that whatever fear I have inside me, my desire to win is always stronger.",
+        "author": "Serena Williams",
+        "category": "motivation"
+      },
+      {
+        "content": "You are never too old to set another goal or to dream a new dream.",
+        "author": "C.S. Lewis",
+        "category": "motivation"
+      },
+      {
+        "content": "It is during our darkest moments that we must focus to see the light.",
+        "author": "Aristotle",
+        "category": "motivation"
+      },
+      {
+        "content": "Believe you can and you're halfway there.",
+        "author": "Theodore Roosevelt",
+        "category": "motivation"
+      },
+      {
+        "content": "Life shrinks or expands in proportion to one’s courage.",
+        "author": "Anaïs Nin",
+        "category": "motivation"
+      },
+      {
+        "content": "Just don't give up trying to do what you really want to do. Where there is love and inspiration, I don't think you can go wrong.",
+        "author": "Ella Fitzgerald",
+        "category": "motivation"
+      },
+      {
+        "content": "Try to be a rainbow in someone's cloud.",
+        "author": "Maya Angelou",
+        "category": "motivation"
+      },
+      {
+        "content": "If you don't like the road you're walking, start paving another one.",
+        "author": "Dolly Parton",
+        "category": "motivation"
+      },
+      {
+        "content": "Real change, enduring change, happens one step at a time.",
+        "author": "Ruth Bader Ginsburg",
+        "category": "motivation"
+      },
+      {
+        "content": "All dreams are within reach. All you have to do is keep moving towards them.",
+        "author": "Viola Davis",
+        "category": "motivation"
+      },
+      {
+        "content": "It is never too late to be what you might have been.",
+        "author": "George Eliot",
+        "category": "motivation"
+      },
+      {
+        "content": "When you put love out in the world it travels, and it can touch people and reach people in ways that we never even expected.",
+        "author": "Laverne Cox",
+        "category": "motivation"
+      },
+      {
+        "content": "Give light and people will find the way.",
+        "author": "Ella Baker",
+        "category": "motivation"
+      },
+      {
+        "content": "It always seems impossible until it's done.",
+        "author": "Nelson Mandela",
+        "category": "motivation"
+      },
+      {
+        "content": "Don’t count the days, make the days count.",
+        "author": "Muhammad Ali",
+        "category": "motivation"
+      },
+      {
+        "content": "If you risk nothing, then you risk everything.",
+        "author": "Geena Davis",
+        "category": "motivation"
+      },
+      {
+        "content": "Definitions belong to the definers, not the defined.",
+        "author": "Toni Morrison",
+        "category": "motivation"
+      },
+      {
+        "content": "When you have a dream, you've got to grab it and never let go.",
+        "author": "Carol Burnett",
+        "category": "motivation"
+      },
+      {
+        "content": "You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.",
+        "author": "Dr. Seuss",
+        "category": "love"
+      },
+      {
+        "content": "I love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.",
+        "author": "Pablo Neruda",
+        "category": "love"
+      },
+      {
+        "content": "Love is like the wind, you can’t see it but you can feel it.",
+        "author": "Nicholas Sparks",
+        "category": "love"
+      },
+      {
+        "content": "Love is the magician that pulls man out of his own hat.",
+        "author": "Ben Hecht",
+        "category": "love"
+      },
+      {
+        "content": "The best love is the kind that awakens the soul; that makes us reach for more, that plants the fire in our hearts and brings peace to our minds. That’s what I hope to give you forever.",
+        "author": "Noah from The Notebook",
+        "category": "love"
+      },
+      {
+        "content": "I would rather spend one lifetime with you, than face all the ages of this world alone.",
+        "author": "J.R.R. Tolkien",
+        "category": "love"
+      },
+      {
+        "content": "To be your friend was all I ever wanted; to be your lover was all I ever dreamed.",
+        "author": "Valerie Lombardo",
+        "category": "love"
+      },
+      {
+        "content": "My wish is that you may be loved to the point of madness.",
+        "author": "André Breton",
+        "category": "love"
+      },
+      {
+        "content": "A purpose of human life, no matter who is controlling it, is to love whoever is around to be loved.",
+        "author": "Kurt Vonnegut",
+        "category": "love"
+      },
+      {
+        "content": "Romance is the glamour which turns the dust of everyday life into a golden haze.",
+        "author": "Elinor Glyn",
+        "category": "love"
+      },
+      {
+        "content": "Love is always patient and kind. It is never jealous. Love is never boastful or conceited. It is never rude or selfish. It does not take offense and is not resentful. Love takes no pleasure in other people’s sins, but delights in the truth. It is always ready to excuse, to trust, to hope, and to endure whatever comes.",
+        "author": "1 Corinthians 13:4-7",
+        "category": "love"
+      },
+      {
+        "content": "Love is the strange bewilderment which overtakes one person on account of another person.",
+        "author": "James Thurber",
+        "category": "love"
+      },
+      {
+        "content": "One word frees us of all the weight and pain of life: that word is love.",
+        "author": "Sophocles",
+        "category": "love"
+      },
+      {
+        "content": "Flatter me, and I may not believe you. Criticize me, and I may not like you. Ignore me, and I may not forgive you. Encourage me, and I will not forget you. Love me and I may be forced to love you.",
+        "author": "William Arthur Ward",
+        "category": "love"
+      },
+      {
+        "content": "So, I love you because the entire universe conspired to help me find you.",
+        "author": "Paulo Coelho",
+        "category": "love"
+      },
+      {
+        "content": "The purpose of our lives is to be happy.",
+        "author": "Dalai Lama",
+        "category": "life"
+      },
+      {
+        "content": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon",
+        "category": "life"
+      },
+      {
+        "content": "Get busy living or get busy dying.",
+        "author": "Stephen King",
+        "category": "life"
+      },
+      {
+        "content": "You only live once, but if you do it right, once is enough.",
+        "author": "Mae West",
+        "category": "life"
+      },
+      {
+        "content": "Many of life’s failures are people who did not realize how close they were to success when they gave up.",
+        "author": "Thomas A. Edison",
+        "category": "life"
+      },
+      {
+        "content": "If you want to live a happy life, tie it to a goal, not to people or things.",
+        "author": "Albert Einstein",
+        "category": "life"
+      },
+      {
+        "content": "Never let the fear of striking out keep you from playing the game.",
+        "author": "Babe Ruth",
+        "category": "life"
+      },
+      {
+        "content": "Money and success don’t change people; they merely amplify what is already there.",
+        "author": "Will Smith",
+        "category": "life"
+      },
+      {
+        "content": "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.",
+        "author": "Steve Jobs",
+        "category": "life"
+      },
+      {
+        "content": "Not how long, but how well you have lived is the main thing.",
+        "author": "Seneca",
+        "category": "life"
+      },
+      {
+        "content": "If life were predictable it would cease to be life, and be without flavor.",
+        "author": "Eleanor Roosevelt",
+        "category": "life"
+      },
+      {
+        "content": "The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.",
+        "author": "Henry Ford",
+        "category": "life"
+      },
+      {
+        "content": "In order to write about life first you must live it.",
+        "author": "Ernest Hemingway",
+        "category": "life"
+      },
+      {
+        "content": "The big lesson in life, baby, is never be scared of anyone or anything.",
+        "author": "Frank Sinatra",
+        "category": "life"
+      },
+      {
+        "content": "The sun himself is weak when he first rises, and gathers strength and courage as the day gets on.",
+        "author": "Charles Dickens",
+        "category": "sad"
+      },
+      {
+        "content": "Although the world is full of suffering, it is also full of the overcoming of it.",
+        "author": "Helen Keller",
+        "category": "sad"
+      },
+      {
+        "content": "You have within you right now, everything you need to deal with whatever the world can throw at you.",
+        "author": "Brian Tracy",
+        "category": "sad"
+      },
+      {
+        "content": "Even the darkest night will end and the sun will rise.",
+        "author": "Victor Hugo",
+        "category": "sad"
+      },
+      {
+        "content": "Courage doesn’t always roar. Sometimes courage is the quiet voice at the end of the day saying, ‘I will try again tomorrow.’",
+        "author": "Mary Anne Radmacher",
+        "category": "sad"
+      },
+      {
+        "content": "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.",
+        "author": "Henry Ford",
+        "category": "sad"
+      },
+      {
+        "content": "It’s not whether you get knocked down, it’s whether you get up.",
+        "author": "Vince Lombardi",
+        "category": "sad"
+      },
+      {
+        "content": "Sometimes, when things are falling apart, they may actually be falling into place.",
+        "author": "Unknown",
+        "category": "sad"
+      },
+      {
+        "content": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+        "author": "Winston Churchill",
+        "category": "sad"
+      },
+      {
+        "content": "Happiness can be found even in the darkest of times, if one only remembers to turn on the light.",
+        "author": "Albus Dumbledore (J.K. Rowling)",
+        "category": "sad"
+      },
+      {
+        "content": "The harder you fall, the higher you bounce.",
+        "author": "Zig Ziglar",
+        "category": "sad"
+      },
+      {
+        "content": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+        "author": "Ralph Waldo Emerson",
+        "category": "sad"
+      },
+      {
+        "content": "Our greatest glory is not in never falling, but in rising every time we fall.",
+        "author": "Confucius",
+        "category": "sad"
+      },
+      {
+        "content": "Do not let what you cannot do interfere with what you can do.",
+        "author": "John Wooden",
+        "category": "sad"
+      },
+      {
+        "content": "This too shall pass.",
+        "author": "Persian Proverb",
+        "category": "sad"
+      }
+    ]
+  }
+  

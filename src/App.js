@@ -1,13 +1,11 @@
-// src/components/QuoteGenerator.js
-
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import './components/QuoteGenerator';
+import quotesData from './quotes.json'; // Importing the JSON file
+import './components/QuoteGenerator.css';
 
 const QuoteGenerator = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [category, setCategory] = useState('motivation');
 
   // Motivational prompts for user interaction
   const prompts = [
@@ -20,49 +18,60 @@ const QuoteGenerator = () => {
   // Randomly select a motivational prompt
   const getRandomPrompt = () => prompts[Math.floor(Math.random() * prompts.length)];
 
-  // Function to fetch a random quote
-  const fetchQuote = async () => {
-    setLoading(true); // Start loading
-    try {
-      const response = await axios.get('https://api.quotable.io/random');
-      setQuote(response.data.content);
-      setAuthor(response.data.author);
-    } catch (error) {
-      console.error('Error fetching the quote:', error);
-    } finally {
-      setLoading(false); // End loading
-    }
-  };
+  // Fetch a random quote from the selected category
+  // Fetch a random quote from the selected category
+const fetchQuote = () => {
+  const filteredQuotes = quotesData.quotes.filter(q => q.category === category);
+  const randomQuote = filteredQuotes[Math.floor(Math.random() * filteredQuotes.length)];
+  if (randomQuote) {
+    setQuote(randomQuote.content);
+    setAuthor(randomQuote.author);
+  } else {
+    setQuote('No quotes available for this category.');
+    setAuthor('');
+  }
+};
 
-  // Fetch a new quote when the component mounts
+
+  // Fetch a new quote when the category changes
   useEffect(() => {
     fetchQuote();
-  }, []);
+  }, [category]);
 
-  // Function to handle quote sharing on Twitter
-  const shareOnTwitter = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text="${quote}" - ${author}`;
-    window.open(twitterUrl, '_blank');
+  // Handle category change
+  const handleCategoryChange = (event) => {
+    setCategory(event.target.value);
   };
 
   return (
     <div className="quote-container">
       <div className="quote-box">
+        <div className="category-container">
+          <label htmlFor="category">Choose a category:</label>
+          <select
+            id="category"
+            className="category-select"
+            value={category}
+            onChange={handleCategoryChange}
+          >
+            <option value="motivation">Motivation</option>
+            <option value="love">Love</option>
+            <option value="life">Life</option>
+            <option value="sad">Sad</option>
+          </select>
+        </div>
         <p className="motivational-text">{getRandomPrompt()}</p>
-        {loading ? (
-          <p className="quote-text">Loading...</p>
-        ) : (
+        {quote ? (
           <>
             <p className="quote-text">"{quote}"</p>
             <p className="quote-author">- {author}</p>
           </>
+        ) : (
+          <p className="quote-text">Loading...</p>
         )}
         <div className="button-container">
           <button className="new-quote-btn" onClick={fetchQuote}>
             New Quote
-          </button>
-          <button className="tweet-quote-btn" onClick={shareOnTwitter}>
-            Share on Twitter
           </button>
         </div>
       </div>
